@@ -19,11 +19,11 @@
 			</tr>
 			<tr>
 				<td><label>Name :</label></td>
-				<td><input type="text" name="" class="form-control"></td>
+				<td><input type="text" name="" class="form-control name"></td>
 			</tr>
 			<tr>
 				<td><label>Email :</label></td>
-				<td><input type="email" name="" class="form-control"></td>
+				<td><input type="email" name="" class="form-control email"></td>
 			</tr>
 			<tr>
 				<td><label>Gender : </label></td>
@@ -37,7 +37,7 @@
 			</tr>
 			<tr>
 				<td><label>Address : </label></td>
-				<td><textarea class="form-control"></textarea></td>
+				<td><textarea class="form-control address"></textarea></td>
 			</tr>
 			
 			<tr>
@@ -61,11 +61,11 @@
 			</tr>
 			<tr>
 				<td><label>Name :</label></td>
-				<td><input type="text" name="" class="form-control"></td>
+				<td><input type="text" name="" class="form-control ename"></td>
 			</tr>
 			<tr>
 				<td><label>Email :</label></td>
-				<td><input type="email" name="" class="form-control"></td>
+				<td><input type="email" name="" class="form-control eemail"></td>
 			</tr>
 			<tr">
 				<td><label>Gender : </label></td>
@@ -79,7 +79,7 @@
 			</tr>
 			<tr>
 				<td><label>Address : </label></td>
-				<td><textarea class="form-control"></textarea></td>
+				<td><textarea class="form-control eaddress"></textarea></td>
 			</tr>
 			
 			<tr>
@@ -103,6 +103,18 @@
 				<th>Action</th>	
 			</thead>
 			<tbody id="">
+				<tr>
+					<td>1</td>
+					<td>Khin Linn Thu</td>
+					<td>khinlinthu007@gmail.com</td>
+					<td>female</td>
+					<td>Kamaryut</td>
+					<td>
+						<button id="detail" class="btn btn-success">Detail</button>
+						<button id="edit" class="btn btn-warning">Edit</button>
+						<button id="delete" class="btn btn-danger">Delete</button>
+					</td>
+				</tr>
 				
 			</tbody>
 		</table>
@@ -126,6 +138,7 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$(".editform").hide();
+			
 		})
 	</script>
 
