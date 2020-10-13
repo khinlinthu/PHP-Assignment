@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Form</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+</head>
+<body>
+	<div class="container">
+	<form class="newform">
+	<div class="form-group">		
+		<h3 class="text-center m-5">ADD NEW STUDENT</h3>
+		<table class="table">
+			<tr>
+				<td><label>Profile :</label></td>
+				<td><input type="file" name="" class="form-control-file"></td>
+			</tr>
+			<tr>
+				<td><label>Name :</label></td>
+				<td><input type="text" name="" class="form-control"></td>
+			</tr>
+			<tr>
+				<td><label>Email :</label></td>
+				<td><input type="email" name="" class="form-control"></td>
+			</tr>
+			<tr>
+				<td><label>Gender : </label></td>
+				<td>
+					<input type="radio" name="gender" value="male" class="form-check-input checked">
+					<label>Male</label><br>
+					
+					<input type="radio" name="gender" value="female" class="form-check-input">
+					<label>Female</label>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Address : </label></td>
+				<td><textarea class="form-control"></textarea></td>
+			</tr>
+			
+			<tr>
+				<td><button id="save" class="btn btn-primary">Save</button></td>
+			</tr>
+		
+		</table>
+	</div>
+	</form>
+</div>
+
+
+<div class="container">
+	<form class="editform">
+	<div class="form-group">		
+		<h3 class="text-center m-5">EDIT AXISTING STUDENT</h3>
+		<table class="table">
+			<tr>
+				<td><label>Profile :</label></td>
+				<td><input type="file" name="" class="form-control-file"></td>
+			</tr>
+			<tr>
+				<td><label>Name :</label></td>
+				<td><input type="text" name="" class="form-control"></td>
+			</tr>
+			<tr>
+				<td><label>Email :</label></td>
+				<td><input type="email" name="" class="form-control"></td>
+			</tr>
+			<tr">
+				<td><label>Gender : </label></td>
+				<td>
+					<input type="radio" name="gender" value="male" class="form-check-input checked">
+					<label>Male</label><br>
+					
+					<input type="radio" name="gender" value="female" class="form-check-input">
+					<label>Female</label>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Address : </label></td>
+				<td><textarea class="form-control"></textarea></td>
+			</tr>
+			
+			<tr>
+				<td><button id="save" class="btn btn-primary">Update</button></td>
+			</tr>
+		
+		</table>
+	</div>
+	</form>
+</div>
+
+<div class="container">
+	<div id="mytable">		
+		<table border="1" cellpadding="5" cellspacing="0" id="stable">
+			<thead>
+				<th>#</th>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Gender</th>
+				<th>Address</th>					
+				<th>Action</th>	
+			</thead>
+			<tbody id="">
+				
+			</tbody>
+		</table>
+	</div>
+</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".editform").hide();
+		})
+	</script>
+
+</body>
+</html>
